@@ -6,8 +6,13 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "aws-amplify": "^2.2.7",
+    "aws-amplify-react": "^3.1.8",
+    "evergreen-ui": "^4.24.0",
+    "onsenui": "^2.10.10",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-onsenui": "^1.11.2",
     "react-scripts": "3.4.1"
   },
   "scripts": {

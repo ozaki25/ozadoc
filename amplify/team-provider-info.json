@@ -1,0 +1,14 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-ozadoc-dev-190511-authRole",
+            "UnauthRoleArn": "arn:aws:iam::015680163560:role/amplify-ozadoc-dev-190511-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::015680163560:role/amplify-ozadoc-dev-190511-authRole",
+            "Region": "ap-northeast-1",
+            "DeploymentBucketName": "amplify-ozadoc-dev-190511-deployment",
+            "UnauthRoleName": "amplify-ozadoc-dev-190511-unauthRole",
+            "StackName": "amplify-ozadoc-dev-190511",
+            "StackId": "arn:aws:cloudformation:ap-northeast-1:015680163560:stack/amplify-ozadoc-dev-190511/33368c10-6f49-11ea-9569-06c25460bea0"
+        }
+    }
+}
