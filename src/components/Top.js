@@ -39,6 +39,14 @@ function Top() {
       console.log(e);
     }
   };
+  const getPosts = async () => {
+    try {
+      const posts = await API.graphql(graphqlOperation(listPostss));
+      setData(posts);
+    } catch (e) {
+      console.log(e);
+    }
+  };
 
   const delPosts = async d => {
     const DeletePostsInput = {
@@ -54,16 +62,8 @@ function Top() {
   };
 
   useEffect(() => {
-    const fn = async () => {
-      try {
-        const posts = await API.graphql(graphqlOperation(listPostss));
-        setData(posts);
-      } catch (e) {
-        console.log(e);
-      }
-    };
-    fn();
-  }, [data]);
+    getPosts();
+  }, []);
   return (
     <div>
       <Pane padding={10} margin={10}>
@@ -73,8 +73,8 @@ function Top() {
           title="Complete!"
           confirmLabel="OK!"
           onConfirm={() => {
-            setData("");
             setIsDialogShown(false);
+            getPosts();
           }}
           onCloseComplete={() => setIsDialogShown(false)}
         >
@@ -134,6 +134,7 @@ function Top() {
                         icon="trash"
                         onClick={() => {
                           delPosts(d);
+                          getPosts();
                         }}
                       />
                       <Icon icon="edit" />
